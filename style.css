@@ -1,0 +1,301 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./image/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navigation {
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+}
+.navigation .box-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .box-navigation .box:nth-child(1) h1 {
+    color: white;
+    font-size: 30px;
+}
+.navigation .box-navigation .box:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+}
+.navigation .box-navigation .box:nth-child(2) ul li {
+    list-style-type: none;
+    margin-left: 40px;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a {
+    text-decoration: none;
+    color: white;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+    color: greenyellow;
+}
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+
+
+
+
+
+.hero {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
+}
+.hero h1 {
+    color: rgba(253, 254, 255, 0.495);
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #a3b18a;
+}
+.about .box-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.about .box-about .box:nth-child(2) img {
+    border-radius: 10px;
+    width: 500px;
+}
+.about .box-about .box:nth-child(1) h1 {
+    font-size: 50px;
+}
+.about .box-about .box:nth-child(1) p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.about .box-about .box:nth-child(1) {
+    padding-right: 20px;
+}
+
+
+
+
+
+.famous {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #588157;
+}
+.famous .container h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+.famous .box-famous .box h2 {
+    font-size: 20px
+}
+.famous .box-famous .box {
+    text-align: center;
+    margin-inline: 20px;
+}
+.famous .box-famous {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.famous .box-famous .box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #3a5a40;
+}
+.gallery .container h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.gallery .box-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gallery .box-gallery img {
+    width: 300px;
+    margin: 10px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #344e41;
+}
+.contact .box-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact .box-contact h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.contact .box-contact form table tr {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.contact .box-contact form table tr td label {
+    font-size: 20px;
+}
+.contact .box-contact form table tr td input {
+    padding: 15px 60px 15px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contact .box-contact form table tr td textarea {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+
+
+footer p {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #344e41;
+    color: #fff;
+}
+
+
+
+
+
+.animate__zoomIn {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.animate__slideInDown {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .navigation .box-navigation .menu-navigation .menu-active {
+        opacity: 1;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li a {
+        color: black;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+    .navigation .box-navigation .box:nth-child(3) {
+        display: inline-block;
+    }
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size: 28px;
+    }
+}
